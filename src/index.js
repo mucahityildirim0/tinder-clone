@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 import Dashboard from "./pages/Dashboard";
 import Onboarding from "./pages/Onboarding";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
   },
   {
